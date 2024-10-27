@@ -1,46 +1,39 @@
 Salesforce Developer Account Creation and Activation
 
-This guide walks through the steps to create and activate a Salesforce Developer Account, which will be used to build and deploy the Library Management System.
-
+This guide provides steps to create and activate a Salesforce Developer Account, which will be used to build and deploy the Library Management System.
 
 1. Sign Up for a Salesforce Developer Account
 
-   1. Visit the [Salesforce Developer Sign-Up Page](https://developer.salesforce.com/signup).
-   2. Fill in the required information:
-      - **First Name**: Enter your first name.
-      - **Last Name**: Enter your last name.
-      - **Email Address**: Enter a valid email (activation link will be sent here).
-      - **Company**:  College Name
-      - **Job Title**: Developer
-      - **Country**: Select your country.
-      - **Postal Code**: Enter a valid postal code for your region.
-      - **Username**: Choose a unique username in the email format (e.g., `username@librarysystem.com`).
-   
-   3. Check the box to agree to the terms and conditions.
-   4. Click **Sign Me Up**.
-
+Visit the Salesforce Developer Sign-Up Page at https://developer.salesforce.com/signup.
+Fill in the required information:
+First Name: Enter your first name.
+Last Name: Enter your last name.
+Email Address: Enter a valid email where the activation link will be sent.
+Company: Enter your college name.
+Job Title: Developer
+Country: Select your country.
+Postal Code: Enter a valid postal code.
+Username: Choose a unique username in email format (e.g., username@librarysystem.com).
+Check the box to agree to the terms and conditions.
+Click "Sign Me Up."
 2. Activate the Salesforce Developer Account
 
-   1. Check the email inbox you used in the previous step.
-   2. Look for an activation email from Salesforce. This may take a few minutes to arrive.
-   3. Click the **Verify Account** link within the email.
-   
-   4. Create a password when prompted:
-      - Passwords must be at least 8 characters, including numbers and letters.
-      - Confirm the password and set a security question.
-   5. Click **Save** to finalize your account setup.
-
-
-
+Check your email inbox for an activation email from Salesforce (it may take a few minutes to arrive).
+Open the email and click the Verify Account link.
+Create a password:
+Passwords must be at least 8 characters, including numbers and letters.
+Confirm your password and set a security question.
+Click "Save" to finalize your account setup.
 3. Login to Salesforce Developer Org
 
-   1. Once your account is verified and password set, go to [Salesforce Login](https://login.salesforce.com/).
-   2. Use your **Username** and **Password** to log in.
-   3. Upon first login, explore the Developer Console and Setup pages to become familiar with the interface.
-
+Once your account is verified, go to https://login.salesforce.com/.
+Enter your Username and Password to log in.
+On your first login, explore the Developer Console and Setup pages to get familiar with the interface.
 4. Save and Organize Login Information
 
-   - It’s essential to keep your **Username** and **Password** secure. You may want to save it in a password manager for easy access.
+Keep your Username and Password secure. Saving this information in a password manager is recommended for easy access.
 
- 
+
+
+
 
