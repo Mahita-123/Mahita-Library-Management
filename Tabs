@@ -1,0 +1,45 @@
+Creation of Tabs in the Library Management System
+Tabs in Salesforce provide a way to access different objects and their records quickly. In the Library Management System, we will create tabs for each of the custom objects defined earlier: Patron, Book/Catalog, Borrowing/Return, and Fine. This allows users to navigate easily through the different functionalities of the system.
+
+Steps to Create Tabs for Custom Objects
+Navigate to Setup
+
+Click on the gear icon  in the top-right corner of the Salesforce interface to open the Setup menu.
+Access Tabs Settings
+
+In the Quick Find box on the left, type Tabs and select Tabs from the results.
+Create a New Tab
+
+Click on the New button in the Custom Object Tabs section.
+Select the Custom Object
+
+Choose one of the custom objects you want to create a tab for. For instance, select Patron from the dropdown list.
+Configure Tab Settings
+
+Tab Label: This will be the name displayed on the tab. Enter Patron.
+Tab Name: This is auto-generated based on the label. It should be something like Patron.
+Tab Style: Choose a color and icon that visually represent the object. You might select a suitable icon for library patrons.
+Save the Tab
+
+Click on the Next button and review your settings.
+Finally, click Save to create the tab.
+
+Repeat for Other Objects
+Repeat steps 3 to 6 for the other custom objects: Book/Catalog, Borrowing/Return, and Fine.
+Example of Creating a Tab for Each Object
+
+For Patron Tab:
+Tab Label: Patron
+Tab Style: Choose a person icon.
+
+For Book/Catalog Tab:
+Tab Label: Book/Catalog
+Tab Style: Choose a book icon.
+
+For Borrowing/Return Tab:
+Tab Label: Borrowing/Return
+Tab Style: Choose a checkmark icon.
+
+For Fine Tab:
+Tab Label: Fine
+Tab Style: Choose a money icon.
