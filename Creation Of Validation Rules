@@ -1,0 +1,57 @@
+Validation Rules Creation 
+Validation Rules in Salesforce ensure that the data entered into the system meets specific criteria, helping maintain data integrity. In the context of the Library Management System, we will create validation rules for the Borrowing/Return object to check for negative fine amounts and ensure the return date is entered.
+
+1. Check for Negative Fine Amount
+This validation rule ensures that the fine amount recorded is never negative, which is critical for accurate financial tracking.
+
+Steps to Create the Validation Rule:
+Navigate to Setup:
+Click on the gear icon  in the top-right corner and select Setup.
+
+Access Object Manager:
+In the Quick Find box, type Object Manager and select Object Manager.
+
+Select Borrowing/Return Object:
+Locate and click on the Borrowing/Return object.
+
+Go to Validation Rules:
+In the left sidebar, click on Validation Rules.
+
+Create New Validation Rule:
+Click the New button to create a new validation rule.
+
+Configure Validation Rule Details:
+Rule Name: Check_Negative_Fine_Amount
+Description: "Ensures that the fine amount is not negative."
+Error Condition Formula:
+plaintext
+Copy code
+Fine_Amount__c < 0
+Error Message: "Fine amount must be a positive value."
+Error Location: Select either "Top of Page" or next to the Fine Amount field.
+
+Save the Validation Rule:
+Click Save to finalize the creation of the rule.
+
+2. Return Date Check
+This validation rule ensures that a return date is specified when a book is borrowed, preventing data entry errors related to incomplete records.
+
+Steps to Create the Validation Rule:
+Navigate to Validation Rules for Borrowing/Return Object:
+Follow steps 1 to 4 from the previous section to access the Validation Rules for the Borrowing/Return object.
+
+Create New Validation Rule:
+Click the New button to create another validation rule.
+
+Configure Validation Rule Details:
+Rule Name: Return_Date_Required
+Description: "Ensures that the return date is specified."
+Error Condition Formula:
+plaintext
+Copy code
+ISBLANK(Return_Date__c)
+Error Message: "Return Date must be specified."
+Error Location: Choose to display this message at the "Top of Page" or next to the Return Date field.
+
+Save the Validation Rule:
+Click Save to finalize this validation rule as well.
