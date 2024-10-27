@@ -1,0 +1,46 @@
+Creation of Lightning App for Library Management System
+A Lightning App in Salesforce allows you to group various components and functionalities into a cohesive interface. In the Library Management System, we will create a Lightning App to provide users with a streamlined experience for managing patrons, books, borrowing transactions, and fines.
+
+Steps to Create a Lightning App
+Navigate to Setup
+Click on the gear icon (⚙️) in the top-right corner of the Salesforce interface to open the Setup menu.
+Access App Manager
+
+In the Quick Find box on the left, type App Manager and select App Manager from the results.
+Create a New Lightning App
+
+Click on the New Lightning App button in the top right corner.
+Configure Basic Information
+
+App Name: Enter Library Management.
+Developer Name: This will auto-generate based on the App Name. You can customize it if needed.
+Description: Provide a brief description, e.g., "A Lightning App for managing library operations including patrons, books, and transactions."
+Click Next.
+
+Set Up App Branding
+Logo: Upload a logo for your app if desired.
+Theme Color: Choose a theme color that matches your library branding.
+Click Next.
+
+Choose Navigation Style
+Select either Standard Navigation (recommended for most users) or Console Navigation if you need a tab-based approach. For this project, select Standard Navigation and click Next.
+
+Select Available Items
+Choose the objects and tabs to include in your app. For the Library Management System, select:
+Patron
+Book/Catalog
+Borrowing/Return
+Fine
+You can also add standard objects like Contacts or Reports if relevant.
+Click Next.
+
+Configure User Profiles
+Specify which user profiles should have access to this app. You can choose all profiles or specific ones like Library Staff or Admin.
+Click Next.
+
+Review and Finish
+Review your selections and click Finish to create the app.
+
+Accessing the Lightning App
+Once the Lightning App is created, users can access it from the App Launcher (grid icon) in the Salesforce interface. The Library Management app will display the selected tabs and allow users to manage library operations efficiently.
+
