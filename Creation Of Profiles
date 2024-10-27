@@ -1,0 +1,76 @@
+Creation of Profiles in Library Management System
+Profiles in Salesforce define a user's permissions, access levels, and settings for different objects. In the context of the Library Management System, we will create three distinct profiles: Library Admin, Library Staff, and Patron. Each profile will have different access levels to ensure that users can only perform actions relevant to their roles.
+
+1. Library Admin Profile
+The Library Admin profile will have full access to all objects and fields, allowing them to manage the library system effectively.
+
+Steps to Create the Library Admin Profile:
+Navigate to Setup:
+Click on the gear icon in the top-right corner and select Setup.
+
+Access Profiles:
+In the Quick Find box, type Profiles and click on Profiles under Users.
+
+Clone a Standard Profile:
+Click on the Clone button next to an existing profile (e.g., System Administrator).
+Profile Name: Library Admin
+Description: "Full access to all library management functionalities."
+Click Save.
+
+Set Object Permissions:
+Under the Object Settings, ensure all objects (Patron, Book/Catalog, Borrowing/Return, Fine) are set to Read, Create, Edit, and Delete.
+
+Set Field Permissions:
+Review field-level security for each object to ensure all fields are accessible.
+
+Assign Users:
+Assign users to the Library Admin profile as needed.
+
+2. Library Staff Profile
+The Library Staff profile will have permissions to manage library transactions, such as borrowing and returning books, but will not have administrative access.
+
+Steps to Create the Library Staff Profile:
+Navigate to Setup:
+As described in the previous section.
+
+Clone a Standard Profile:
+Click on the Clone button next to an existing profile (e.g., Standard User).
+Profile Name: Library Staff
+Description: "Manage borrowing and return transactions."
+Click Save.
+Set Object Permissions:
+Under Object Settings:
+Set Patron: Read, Create, Edit.
+Set Book/Catalog: Read, Create, Edit.
+Set Borrowing/Return: Read, Create, Edit.
+Set Fine: Read.
+
+Set Field Permissions:
+Review field-level security to ensure necessary fields are accessible while restricting sensitive fields.
+
+Assign Users:
+Assign library staff users to this profile.
+
+3. Patron Profile
+The Patron profile will have limited access, allowing patrons to view their borrowing history and current borrowed items.
+
+Steps to Create the Patron Profile:
+Navigate to Setup:
+As described in the previous sections.
+
+Clone a Standard Profile:
+Click on the Clone button next to an existing profile (e.g., Customer Community User).
+Profile Name: Patron
+Description: "Access to personal borrowing information."
+Click Save.
+
+Set Object Permissions:
+Under Object Settings:
+Set Patron: Read.
+Set Book/Catalog: Read.
+Set Borrowing/Return: Read (access to their own records only).
+Set Fine: Read (access to their own fine records only).
+Set Field Permissions:
+Review field-level security to limit access to only necessary fields for patrons.
+Assign Users:
+Assign patrons to this profile.
