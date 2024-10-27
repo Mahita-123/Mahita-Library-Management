@@ -1,0 +1,72 @@
+Creation of Users in Library Management System
+In the Library Management System, users represent the individuals who will interact with the system, such as Library Admins, Library Staff, and Patrons. This section outlines the steps to create these users in Salesforce, ensuring they have the appropriate access levels based on their assigned roles.
+
+Steps to Create Users
+Navigate to Setup:
+
+Click on the gear icon (⚙️) in the top-right corner of Salesforce and select Setup.
+Access Users:
+
+In the Quick Find box, type Users and click on Users under the Users section.
+Create a New User:
+
+Click on the New User button to initiate the user creation process.
+User Creation Process
+For Library Admin
+Fill in User Information:
+
+First Name: [Admin First Name]
+Last Name: [Admin Last Name]
+Email: [admin@example.com] (must be unique within the org)
+Username: [admin@example.com] (must be in email format)
+Alias: [Admin Alias] (a short name for display)
+Role: Select Library Admin from the dropdown.
+Profile: Select System Administrator or a custom profile with the necessary permissions.
+Assign a Password:
+
+Check the box for "Generate Password and Notify User Immediately" to send the password to the user’s email.
+Save:
+
+Click Save to create the user.
+For Library Staff
+Repeat the Process:
+
+Click on New User again.
+Fill in User Information:
+
+First Name: [Staff First Name]
+Last Name: [Staff Last Name]
+Email: [staff@example.com]
+Username: [staff@example.com]
+Alias: [Staff Alias]
+Role: Select Library Staff from the dropdown.
+Profile: Select a profile appropriate for library staff.
+Assign a Password:
+
+Check "Generate Password and Notify User Immediately."
+Save:
+
+Click Save to create the user.
+For Patrons
+Repeat the Process:
+
+Click on New User once more.
+Fill in User Information:
+
+First Name: [Patron First Name]
+Last Name: [Patron Last Name]
+Email: [patron@example.com]
+Username: [patron@example.com]
+Alias: [Patron Alias]
+Role: Select Patron from the dropdown.
+Profile: Select a profile appropriate for patrons (e.g., Customer Community User).
+Assign a Password:
+
+Check "Generate Password and Notify User Immediately."
+Save:
+
+Click Save to create the user.
+Summary of Users Created
+Library Admin: Responsible for overall management and administration of the library system.
+Library Staff: Manage the day-to-day operations of book borrowing and returning.
+Patron: Users who will access the library system to borrow books and manage their accounts.
