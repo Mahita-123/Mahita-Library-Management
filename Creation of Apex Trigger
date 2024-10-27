@@ -1,0 +1,50 @@
+Steps to Create the Apex Trigger:
+Navigate to Developer Console:
+
+Log in to your Salesforce Developer account.
+Click on the Setup gear icon in the upper right corner.
+Under the Quick Find box, type Developer Console and select it.
+Create a New Apex Trigger:
+
+In the Developer Console, click on File > New > Apex Trigger.
+Enter the trigger name, for example, BorrowingReturnFineCalculation, and select the Borrowing/Return object.
+Define Trigger Logic:
+
+In the trigger editor, you will define the logic to calculate fines based on the difference between the Return Date and the Actual Return Date. The following sample code illustrates this:
+
+
+trigger BorrowingReturnFineCalculation on Borrowing_Return__c (after insert, after update) {
+    for (Borrowing_Return__c record : Trigger.new) {
+        if (record.Actual_Return_Date__c != null && record.Return_Date__c != null) {
+            Date returnDate = record.Return_Date__c;
+            Date actualReturnDate = record.Actual_Return_Date__c;
+            Long daysOverdue = actualReturnDate.daysBetween(returnDate);
+            
+            // Assuming a fine of $1 per day overdue
+            if (daysOverdue > 0) {
+                record.Fine_Amount__c = daysOverdue; // Set the fine amount
+            } else {
+                record.Fine_Amount__c = 0; // No fine if returned on time
+            }
+        }
+    }
+}
+
+
+Explanation of the Code:
+
+Trigger Events: The trigger runs after insert and after update, meaning it activates after a new record is created or an existing record is updated.
+Loop Through Records: The trigger iterates through each Borrowing_Return__c record in Trigger.new.
+Fine Calculation Logic:
+It checks if both the Actual Return Date and Return Date are not null.
+Calculates the number of days overdue using the daysBetween method.
+Updates the Fine Amount based on the days overdue, with a fine of $1 per day.
+Save the Trigger:
+
+Click on the File menu, then select Save to save your trigger code.
+Test the Trigger:
+
+To ensure the trigger works as expected, create or update records in the Borrowing/Return object to test various scenarios (e.g., returning books late or on time).
+Check for Errors:
+
+After testing, if you encounter errors, review the Apex Debug Logs to identify any issues and adjust the code accordingly.
