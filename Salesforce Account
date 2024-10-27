@@ -3,7 +3,6 @@ Salesforce Developer Account Creation and Activation
 This guide provides steps to create and activate a Salesforce Developer Account, which will be used to build and deploy the Library Management System.
 
 1. Sign Up for a Salesforce Developer Account
-
 Visit the Salesforce Developer Sign-Up Page at https://developer.salesforce.com/signup.
 Fill in the required information:
 First Name: Enter your first name.
@@ -16,21 +15,21 @@ Postal Code: Enter a valid postal code.
 Username: Choose a unique username in email format (e.g., username@librarysystem.com).
 Check the box to agree to the terms and conditions.
 Click "Sign Me Up."
-2. Activate the Salesforce Developer Account
 
+2. Activate the Salesforce Developer Account
 Check your email inbox for an activation email from Salesforce (it may take a few minutes to arrive).
 Open the email and click the Verify Account link.
 Create a password:
 Passwords must be at least 8 characters, including numbers and letters.
 Confirm your password and set a security question.
 Click "Save" to finalize your account setup.
-3. Login to Salesforce Developer Org
 
+3. Login to Salesforce Developer Org
 Once your account is verified, go to https://login.salesforce.com/.
 Enter your Username and Password to log in.
 On your first login, explore the Developer Console and Setup pages to get familiar with the interface.
-4. Save and Organize Login Information
 
+4. Save and Organize Login Information
 Keep your Username and Password secure. Saving this information in a password manager is recommended for easy access.
 
 
