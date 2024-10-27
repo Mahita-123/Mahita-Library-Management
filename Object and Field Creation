@@ -1,0 +1,90 @@
+Custom Objects Details
+Below are the details for each custom object you will create for the Library Management System:
+
+A. Patron Object
+Label: Patron
+Plural Label: Patrons
+Object Name: Patron
+Description: This object is used to store patron information, including their personal details and membership status.
+Configuration Steps:
+After entering the above information, configure additional options such as:
+Allow Reports: Check this box to allow reporting on the Patron records.
+Allow Activities: Check if you want to track tasks and events related to patrons.
+Track Field History: Check this box if you want to keep track of changes made to the fields.
+
+B. Book/Catalog Object
+Label: Book/Catalog
+Plural Label: Books/Catalogs
+Object Name: Book_Catalog
+Description: This object stores information about each book available in the library’s catalog, including title, author, ISBN, and availability.
+Configuration Steps:
+Similar to the Patron object, enable options that suit your library's operational needs.
+
+C. Borrowing/Return Object
+Label: Borrowing/Return
+Plural Label: Borrowing/Returns
+Object Name: Borrowing_Return
+Description: This object tracks all borrowing and return transactions between patrons and books, including due dates and actual return dates.
+Configuration Steps:
+Enable reporting and activity tracking as required.
+
+D. Fine Object
+Label: Fine
+Plural Label: Fines
+Object Name: Fine
+Description: This object is used to track fine payments when patrons return books late.
+Configuration Steps:
+Again, enable necessary options for reporting and activity tracking.
+
+Saving the Custom Objects
+Review Your Entries:
+After entering the information for each object, review the details to ensure accuracy.
+
+Save the Object:
+Click the Save button to create the custom object. Repeat these steps for each object (Patron, Book/Catalog, Borrowing/Return, Fine
+
+n this Library Management System, we have defined four custom objects: Patron, Book/Catalog, Borrowing/Return, and Fine. Each object contains specific fields that serve to capture essential data for managing library operations.
+
+1. Patron Object
+The Patron object is designed to store detailed information about library members. Below are the fields included in the Patron object:
+
+First Name(Text)= The patron's first name for identification purposes.
+Last Name(Text)=	The patron's last name for identification purposes.
+Email(Email)=	The patron's email address, used for communication and notifications.
+Phone(Phone)=	The patron's contact number for direct communication.
+Address(Text Area)=	The patron's physical address, capturing multiple lines if necessary.
+Library Card Number(Text)=	A unique identifier assigned to each patron for tracking purposes.
+Membership Status	(Picklist)=	Indicates whether the patron's membership is currently active or inactive.
+Date of Birth(Date)=	The patron's birth date, useful for age-related eligibility and notifications.
+
+2. Book/Catalog Object
+The Book/Catalog object contains information about each book available in the library. Here are the fields included:
+
+Title(Text)=	The title of the book.
+Author(Text)=	The author(s) of the book.
+ISBN(Text)=	The International Standard Book Number for unique book identification.
+Publisher(Text)=	The name of the publisher responsible for the book.
+Publication Date(Date)=	The date the book was published.
+Book Type(Picklist)=	Categorizes the book as Fiction or Non-Fiction.
+Genre(Picklist)=	Describes the book's genre, such as Romance, Thriller, or Mystery.
+Availability(Checkbox)=	Indicates whether the book is currently available or not.
+
+3. Borrowing/Return Object
+The Borrowing/Return object tracks the borrowing and returning of books by patrons. Below are the fields included:
+
+Patron(Lookup)=	A relationship field that links to the Patron object, identifying who borrowed the book.
+Book(Lookup)=	A relationship field that links to the Book/Catalog object, identifying which book is borrowed.
+Borrow Date(Date)=	The date when the book was borrowed by the patron.
+Return Date(Date)=	The expected date for the book to be returned.
+Actual Return Date(Date)=	The date when the book was actually returned.
+Fine Amount(Currency)=	The monetary penalty incurred if the book is returned late.
+Status(Picklist)=	Indicates the status of the transaction, whether it is Borrowed, Returned, or Overdue.
+
+4. Fine Object
+The Fine object is used to track any fines incurred by patrons for late returns. Here are the fields included:
+
+Patron(Lookup)=	A relationship field that links to the Patron object, identifying which patron owes a fine.
+Book(Lookup)=	A relationship field that links to the Book/Catalog object, identifying which book the fine is associated with.
+Fine Amount(Currency)=	The total amount of the fine incurred by the patron.
+Payment Date(Date)=	The date when the fine was paid by the patron.
+Payment Method(Picklist)=	Indicates the method used for payment, such as Cash, Card, or Online.
