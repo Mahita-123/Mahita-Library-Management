@@ -1,0 +1,52 @@
+Creation of Reports for Active Members and Available Books
+Objective:
+This section outlines the process of creating two essential reports in the Library Management System: one for tracking active members and another for monitoring the availability of books. These reports provide valuable insights for library management and decision-making.
+
+Steps to Create Reports:
+1. Report on Active Members
+Step 1: Navigate to Reports
+Log in to your Salesforce Developer account.
+Click on the App Launcher (grid icon) and select Reports.
+Step 2: Create a New Report
+Click on the New Report button.
+In the "Select Report Type" dialog, search for Patron and select the Patron report type. Click Continue.
+Step 3: Configure Report Fields
+Fields Selection:
+Drag and drop the following fields into the report:
+First Name
+Last Name
+Email
+Phone
+Membership Status
+Library Card Number
+Step 4: Apply Filters
+In the Filters pane, set the following filters:
+Membership Status equals Active.
+Step 5: Run and Save the Report
+Click the Run button to view the report results.
+Once satisfied with the output, click on Save & Run.
+Name the report Active Members Report and provide a description (e.g., “This report lists all active library members.”).
+Click Save to store the report.
+2. Report on Available Books
+Step 1: Navigate to Reports
+In the Salesforce interface, ensure you are still in the Reports tab.
+Step 2: Create a New Report
+Click on the New Report button.
+In the "Select Report Type" dialog, search for Book/Catalog and select the Book/Catalog report type. Click Continue.
+Step 3: Configure Report Fields
+Fields Selection:
+Drag and drop the following fields into the report:
+Title
+Author
+ISBN
+Publisher
+Publication Date
+Availability
+Step 4: Apply Filters
+In the Filters pane, set the following filters:
+Availability equals True (or check for Available).
+Step 5: Run and Save the Report
+Click the Run button to view the report results.
+Once satisfied with the output, click on Save & Run.
+Name the report Available Books Report and provide a description (e.g., “This report lists all books currently available in the library.”).
+Click Save to store the report.
