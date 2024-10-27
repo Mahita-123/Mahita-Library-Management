@@ -1,0 +1,40 @@
+Creation of Dashboard and Adding Reports
+Objective:
+This section details the process of creating a dashboard in the Library Management System, which visually represents the data from the Active Members Report and the Available Books Report. The dashboard provides a comprehensive overview for library management and facilitates quick decision-making.
+
+Steps to Create a Dashboard:
+1. Navigate to the Dashboards Tab
+Log in to your Salesforce Developer account.
+Click on the App Launcher (grid icon) and select Dashboards.
+2. Create a New Dashboard
+Click on the New Dashboard button.
+Enter a name for the dashboard, such as Library Management Dashboard.
+Provide a brief description (e.g., “Dashboard showcasing active members and available books.”).
+Choose the folder where you want to save the dashboard (e.g., Private Dashboards).
+Click Create.
+3. Add a Picture to the Dashboard
+To enhance the visual appeal, click on the + Component button.
+In the component type selection, choose Image.
+Enter the image URL (ensure the image is hosted online) or upload an image directly if your Salesforce org allows it.
+Adjust the size and position as needed, then click Add to insert the picture.
+4. Add Active Members Report to the Dashboard
+Click on the + Component button again to add another component.
+In the component type selection, choose Report.
+From the Select Report dialog, search for Active Members Report that you created earlier.
+Choose the report and select a suitable display type (e.g., Table, Chart).
+Configure any additional settings such as chart type, labels, etc.
+Click Add to insert the report component into the dashboard.
+5. Add Available Books Report to the Dashboard
+Repeat the process by clicking on the + Component button.
+Choose Report from the component type selection again.
+Search for Available Books Report and select it.
+Choose the display type that best suits the data visualization (e.g., Bar Chart, Pie Chart).
+Configure any additional settings for this component.
+Click Add to insert the available books report into the dashboard.
+6. Save and Arrange the Dashboard Components
+Once all components are added, you can drag and drop them to arrange their layout on the dashboard.
+Click on the Save button to save your dashboard configuration.
+7. View the Dashboard
+Click on the Done button to exit the dashboard builder.
+You will now see your Library Management Dashboard with all components displayed.
+Ensure that the data from both reports is accurately represented.
