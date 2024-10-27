@@ -1,0 +1,61 @@
+Creation of Roles and Hierarchy in Library Management System
+Roles in Salesforce are used to define the level of access users have to data within the organization. In the Library Management System, we will create three distinct roles: Library Admin, Library Staff, and Patron. Each role will reflect the hierarchy of responsibilities and permissions within the library system.
+
+1. Library Admin Role
+The Library Admin role is at the top of the hierarchy and has access to all functionalities, allowing for effective management of library operations.
+
+Steps to Create the Library Admin Role:
+Navigate to Setup:
+
+Click on the gear icon (⚙️) in the top-right corner and select Setup.
+Access Roles:
+
+In the Quick Find box, type Roles and click on Roles under Users.
+Create a New Role:
+
+Click on Set Up Roles and then click on Add Role.
+Role Name: Library Admin
+Description: "Full access to all library management functionalities."
+Parent Role: None (this is the top-level role).
+Click Save.
+Assign Users:
+
+After saving, you can assign users to the Library Admin role by clicking on the Add User button.
+2. Library Staff Role
+The Library Staff role is below the Library Admin and has access to most functionalities but lacks administrative privileges.
+
+Steps to Create the Library Staff Role:
+Access Roles:
+
+Navigate back to the Roles setup as described above.
+Create a New Role:
+
+Click on Add Role.
+Role Name: Library Staff
+Description: "Manage borrowing and return transactions."
+Parent Role: Library Admin (this indicates that Library Staff reports to Library Admin).
+Click Save.
+Assign Users:
+
+You can assign library staff members to this role by clicking on the Add User button.
+3. Patron Role
+The Patron role is at the bottom of the hierarchy, with the most limited access. Patrons can view their borrowing history and current borrowed items.
+
+Steps to Create the Patron Role:
+Access Roles:
+
+Again, navigate back to the Roles setup.
+Create a New Role:
+
+Click on Add Role.
+Role Name: Patron
+Description: "Access to personal borrowing information."
+Parent Role: Library Staff (this indicates that Patrons report to Library Staff).
+Click Save.
+Assign Users:
+
+Assign users (patrons) to this role using the Add User button.
+Role Hierarchy Overview
+Library Admin: Top-level role with full access. Can manage users, books, and transactions.
+Library Staff: Middle-level role with access to manage borrowing and returning of books, as well as access to patron information.
+Patron: Bottom-level role with limited access, primarily to their own borrowing records.
