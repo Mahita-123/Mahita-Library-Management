@@ -1,0 +1,65 @@
+Creation of Flows for Library Management System
+1. Flow for Book Availability Status
+Objective: The Book Availability Status flow automatically updates the availability of books in the Library Management System based on the borrowing and return transactions.
+
+Steps to Create the Flow:
+Navigate to Flows:
+
+Go to Setup (gear icon) > Process Automation > Flows.
+Create New Flow:
+
+Click on New Flow and select Record-Triggered Flow.
+Select Object:
+
+Choose Borrowing/Return as the object that will trigger the flow.
+Set Trigger Criteria:
+
+Configure the flow to trigger after a record is created or updated. This will allow the flow to check the availability status whenever a borrowing or return action occurs.
+Add Decision Element:
+
+Insert a Decision element to determine the action based on the status of the Return Date.
+Conditions:
+If Return Date is not null and Actual Return Date is null: Change the book status to Not Available.
+If Actual Return Date is not null: Change the book status back to Available.
+Update Records:
+
+Add an Update Records element to change the Availability field on the Book/Catalog object based on the decision outcomes.
+Save and Activate:
+
+Name the flow (e.g., "Book Availability Status Flow"), save it, and then activate it.
+Example Usage:
+When a user borrows a book, the flow checks if there is a Return Date and updates the book status to Not Available. When the book is returned, it updates the status back to Available.
+
+2. Flow for Due Date Reminder
+Objective: The Due Date Reminder flow automatically sends email notifications to patrons when their borrowed items are due soon.
+
+Steps to Create the Flow:
+Navigate to Flows:
+
+Go to Setup (gear icon) > Process Automation > Flows.
+Create New Flow:
+
+Click on New Flow and select Scheduled-Triggered Flow.
+Set Flow Schedule:
+
+Choose to run the flow daily at a convenient time (e.g., 8:00 AM).
+Add Get Records Element:
+
+Add a Get Records element to fetch records from the Borrowing/Return object where the Return Date is within the next few days (e.g., 3 days from today).
+Add Loop Element:
+
+Insert a Loop element to iterate through each of the records retrieved in the previous step.
+Send Email Action:
+
+Inside the loop, add an Action element to Send Email.
+Configure the email settings:
+Recipient: Use the Patron’s Email field.
+Email Template: Select a pre-defined template for due date reminders that includes personalized messages.
+Close the Loop:
+
+Ensure the loop processes each borrowing record and sends an email reminder accordingly.
+Save and Activate:
+
+Name the flow (e.g., "Due Date Reminder Flow"), save it, and activate it.
+Example Usage:
+Every day at 8:00 AM, the flow checks for items that are due in the next three days and sends out email reminders to the respective patrons.
