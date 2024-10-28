@@ -3,7 +3,7 @@ Navigate to Developer Console:
 
 Log in to your Salesforce Developer account.
 Click on the Setup gear icon in the upper right corner.
-Under the Quick Find box, type Developer Console and select it.
+Under the Quick Find box, type Developer Console and select it. 
 Create a New Apex Trigger:
 
 In the Developer Console, click on File > New > Apex Trigger.
