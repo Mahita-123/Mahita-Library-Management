@@ -5,7 +5,7 @@ This section details the process of creating a dashboard in the Library Manageme
 Steps to Create a Dashboard:
 1. Navigate to the Dashboards Tab
 Log in to your Salesforce Developer account.
-Click on the App Launcher (grid icon) and select Dashboards.
+Click on the App Launcher (grid icon) and select Dashboards. 
 2. Create a New Dashboard
 Click on the New Dashboard button.
 Enter a name for the dashboard, such as Library Management Dashboard.
